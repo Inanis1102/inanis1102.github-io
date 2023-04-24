@@ -1,0 +1,395 @@
+/*-RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Duong Tran Le Truong
+  ID: 3807528*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+html{
+    width:100vw;
+    overflow-x:hidden;
+}
+
+section {
+    width: 100%;
+    height: 70vh;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section .cat_navigator{
+    height: 1vh;
+}
+
+section .contact_navigator{
+    height: 1vh;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover{
+    color: #089da1;
+}
+
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover{
+    color: #089da1;
+    cursor: pointer;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1{
+    position: relative;
+    font-size: 4vw;
+    top: 80px;
+    left: 5vw;
+}
+
+section .main h1 span{
+    color: #089da1;
+}
+
+section .main p{
+    width: 30vw;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 5vw;
+}
+
+section .main .main_tag .main_btn{
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 180px;
+    left: 5vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main .main_img img{
+    width: 40vw;
+    position: relative;
+    top: 20vh;
+    left: 10px;
+}
+
+section video{
+    position: relative;
+    top: 20vh;
+    left: 10px;
+}
+
+/*defining the category, using similar codes so only 1 category needed for all*/
+
+.category{
+    width: 100%;
+    height: 100vh;
+    margin: 25px 0;
+}
+
+.category h1{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category .category_box{
+    width:95%;
+    height: 485px;
+    margin: 0 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.category .category_box .category_card{
+    width: 250px;
+    height: 500px;
+    text-align:center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.category .category_box .category_card:hover{
+    box-shadow: 0 0 5px #089da1;
+}
+
+.category .category_box .category_card .cat_book_img{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px #089da1;
+    overflow:hidden;
+}
+
+.category .category_box .category_card .cat_book_img img{
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.category .category_box .category_card:hover .cat_book_img img{
+    transform:scale(1.1);
+}
+
+.category .category_box .category_card .cat_book h2{
+    margin: 10px;
+}
+
+.category .category_box .category_card .cat_book .writer{
+    color: #919191;
+}
+
+.category .category_box .category_card .cat_book .categories{
+    color: #089da1;
+    margin-top: 8px;
+}
+
+.category .category_box .category_card .cat_book .book_price{
+    margin-top:8px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.category .category_box .category_card .cat_book .f_btn{
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: #000;
+}
+
+/*defining the footer*/
+
+footer{
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .social i{
+    margin-right: 10px;
+}
+
+footer .footer_main .social .social_link i{
+    margin: 0 5px;
+}
+
+footer .footer_main .subscribe .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer_main .subscribe .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer_main .subscribe .search_bar button{
+    padding: 7px 15px;
+    background: #089da1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: #089da1;
+    margin-left: 10px;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+@media screen and (max-width:900px){
+    img#main_img {
+        display: none;
+    }
+    section{
+        height: 75vh;
+        background-image: url(image/bg.png);
+        background-size: cover;
+        background-position: center;
+    }
+    section .main p{
+    width: 80vw;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 5vw;
+}
+
+    footer .footer_main .tag{
+        display:none;
+    }
+    
+    footer .subscribe{
+        display:none;
+    }
+}

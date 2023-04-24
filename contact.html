@@ -1,0 +1,99 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Duong Tran Le Truong
+  ID: 3807528-->
+
+  <!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Duong Tran Le Truong
+  ID: 3807528-->
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookstore Website</title>
+        <link rel="stylesheet" href="style.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+    </head>
+    <body width="device-width">
+        <section class="contact_navigator">
+            <nav>
+                <div class="logo">
+                    <img src="image/logo.png">
+                </div>
+
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Fiction">Fiction</a></li>
+                    <li><a href="#Non-fiction">Non-fiction</a></li>
+                    <li><a href="#Book">Find your books</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+
+                <div class="social_icon">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                    <i class="fa fa-heart"></i>
+                </div>
+            </nav>
+
+            <div class="main">
+                <div class="main_tag">
+                    <h1>Contact Us</h1>
+                </div>
+
+            </div>
+        
+        </section>
+    </body>
+
+    <div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+  </html>
