@@ -57,42 +57,44 @@
         <form action="/action_page.php">
           <div class="row">
             <div class="col-25">
-              <label for="fname">First Name</label>
+              <label for="purpose">Contact purpose</label>
             </div>
             <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="country">Country</label>
-            </div>
-            <div class="col-75">
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
+              <select name="purpose">
+                <option value="I want to sell books">I want to sell books</option>
+                <option value="I want to buy books">I want to buy books</option>
               </select>
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="subject">Subject</label>
+              <label for="name">Name</label>
             </div>
             <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <input id="name" name="name" placeholder="Your name..">
             </div>
           </div>
           <div class="row">
-            <input type="submit" value="Submit">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+                <input id="email" name="email" placeholder="Your email..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="col-75">
+              <input id="phone" name="phone" placeholder="Your phone.."></input>
+            </div>
+          </div>
+          <div class="row">
+            <span>
+                <input type="button" class="button" value="Submit">
+                <input type="reset" class="button" value="Reset">
+            </span>
           </div>
         </form>
       </div>
